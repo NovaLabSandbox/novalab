@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  novalab-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - WORKER_COUNT=3
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data/scans:/app/data/scans

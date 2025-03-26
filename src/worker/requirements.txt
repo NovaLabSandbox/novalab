@@ -1,0 +1,5 @@
+paho-mqtt
+pymongo
+open3d
+numpy
+flask
